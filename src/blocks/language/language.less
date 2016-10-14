@@ -1,0 +1,26 @@
+.language {
+  display: flex;
+  margin-bottom: 18px;
+  
+  &__item {
+    font-family: @font-family-main;
+    font-size: 16px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #a8a8a8;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    
+    &:nth-child(n+2) {
+      margin-left: 10px;
+    }
+    
+    &--active {
+      color: #353535;
+      background: #dbdbd3;
+    }
+  }
+}

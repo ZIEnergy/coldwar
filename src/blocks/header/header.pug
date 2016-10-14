@@ -1,0 +1,9 @@
+mixin header(mdf)
+  .header(class=mdf)
+    .wrapper.header__wrapper
+      .header__left
+        +logo
+        +menu('header__menu')
+      .header__right
+        a.header__email(href="mailto:info@cold_war.ru") info@cold_war.ru
+        +language

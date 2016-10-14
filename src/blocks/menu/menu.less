@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  
+  &__item {
+    
+    &:nth-child(n+2) {
+      margin-left: 30px;
+    }
+  }
+  
+  &__item-link {
+    color: #dbdbdb;
+    font-family: @font-family-main;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(219,219,219, .3);
+    
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+}
