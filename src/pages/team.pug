@@ -1,0 +1,92 @@
+doctype html
+html(lang='en')
+  include ../templates/head.pug
+  include ../templates/blocks.pug
+  
+  body
+    +header('header--inner')
+    .wrapper.wrapper--columns
+      aside.sidebar
+        h2.sidebar__header О проекте
+        .sidebar__content
+          a.sidebar__link(href="#") Цель проекта
+          a.sidebar__link(href="#") Тематические поля
+          a.sidebar__link(href="#") Методология
+          a.sidebar__link.sidebar__link--active(href="#") Команда
+          a.sidebar__link(href="#") Наши партнёры
+          a.sidebar__link(href="#") Контакты
+      section.content.team
+        h1.page-header.content__page-header Команда
+        .teammate.teammate--left
+          .teammate__wrapper
+            img.teammate__picture(src="img/team-1.jpg" alt="Dokuchaeva")
+            .teammate__content
+              h2.teammate__name Докучаева Светлана Валерьевна
+              p.teammate__occupation Магистр психологии (2014), аспирант ФГАОУ ВО «Южно-Уральский государственный университет (НИУ), преподаватель кафедры политологии ЮУрГУ.
+                a.teammate__email(href="mailto:svetad.87@mail.ru") svetad.87@mail.ru
+              .teammate__section
+                .teammate__article
+                  h3.teammate__article-header Сфера научных интересов:
+                  p.teammate__article-content психология массового сознания, психология лидерства, политические институты, психологические особенности политической активности.
+                .teammate__article
+                  h3.teammate__article-header Тематические поля в рамках проекта «Советская культурная дипломатия в условиях Холодной войны»:
+                  p.teammate__article-content – сравнительный анализ моделей культурной дипломатии;
+                  p.teammate__article-content – (не)государственные визиты как инструмент советской культурной дипломатии в условиях Холодной войны.
+        .teammate.teammate--right.team__item
+          .teammate__wrapper
+            .teammate__content
+              h2.teammate__name Милованова Рузанна Владимировна
+              p.teammate__occupation Аспирант кафедры «Отечественная и зарубежная история» ФГАОУ ВО «ЮУрГУ».
+                a.teammate__email(href="mailto:ruzandreeva@gmail.com") ruzandreeva@gmail.com
+              .teammate__section
+                .teammate__article
+                  h3.teammate__article-header Сфера научных интересов:
+                  p.teammate__article-content культурная дипломатия, мягкая сила, ивент-дипломатия, политическая культура, политическая компаративистика.
+                .teammate__article
+                  h3.teammate__article-header Тематические поля в рамках проекта «Советская культурная дипломатия в условиях Холодной войны»:
+                  p.teammate__article-content – советская event-дипломатия в годы «холодной войны».
+                .teammate__article
+                  h3.teammate__article-header Основные публикации:
+                  p.teammate__article-content Средства массовой информации как инструмент воздействия на население // Всероссийская ассамблея молодых политологов: сб науч. ст. / Перм. гос. нац.  исслед. ун-т. – Пермь, 2013. – С. 27-38.
+                  p.teammate__article-content Национальная идея как фактор развития государства и повышения активности населения // Наука. Южно-Уральский государственный университет материалы 65-ой Научной конференции – Челябинск: Издательский центр ЮУрГУ, 2013. – С. 131-134.
+                  p.teammate__article-content Неформальные политические институты в сравнительной политологии // Наука ЮУрГУ: материалы 66-й научной конференции - – Челябинск: Издательский центр ЮУрГУ, 2014. – С. 990-995.
+            img.teammate__picture(src="img/team-2.jpg" alt="Dokuchaeva")
+        .teammate.teammate--left
+          .teammate__wrapper
+            img.teammate__picture(src="img/team-3.jpg" alt="Dokuchaeva")
+            .teammate__content
+              h2.teammate__name Нагорная Оксана Сергеевна
+              p.teammate__occupation Доктор исторических наук (2011).
+                a.teammate__email(href="mailto:nagornaja.oxana@mail.ru") nagornaja.oxana@mail.ru
+              .teammate__section
+                .teammate__article
+                  h3.teammate__article-header Сфера научных интересов:
+                  p.teammate__article-content культурная история России и Германии в ХХ веке, история Первой мировой войны, транснациональная история, культурная дипломатия, история академических обменов.
+                .teammate__article
+                  h3.teammate__article-header Научные проекты:
+                  p.teammate__article-content – исследовательский проект «Другой военный опыт: русские военнопленные Первой мировой войны в Германии» в университете Тюбингена, Германия (2006-2007);
+                  p.teammate__article-content – руководитель исследовательского проекта «Великая война в России и Германии: коммеморативная политика и культурная память», реализованного при поддержке программы грантов Президента РФ для молодых ученых (2011-2012);
+                  p.teammate__article-content – Young Eastern European Fellowship, Center for Contemporary History Potsdam, Germany (2012-2013);
+                  p.teammate__article-content – стипендиат Германского исторического института в Москве, проекты «Восточногерманские студенты в СССР: транснациональные карьеры в условиях Холодной войны», «Советская культурная дипломатия в социалистическом лагере» (2010, 2015).
+                .teammate__article
+                  h3.teammate__article-header Тематические поля в рамках проекта «Советская культурная дипломатия в условиях Холодной войны»:
+                  p.teammate__article-content – академические и научные обмены в странах социалистического лагеря;
+                  p.teammate__article-content – советская мемориальная дипломатия в странах Восточной Европы;
+                  p.teammate__article-content – транснациональные биографии послов культурной дипломатии в странах восточного блока;
+                  p.teammate__article-content – институты и инструменты советской культурной дипломатии в условиях Холодной войны.
+                .teammate__article
+                  h3.teammate__article-header Основные публикации по тематике проекта:
+                  p.teammate__article-content – Нагорная О.С. Восточногерманские студенты в СССР: перспективы одной транснациональной истории // Институциональные проблемы российского социума: правовой и исторический аспекты: труды научно-специализированной конференции преподавателей вузов, ученых и специалистов. Челябинск: Полиграф-Мастер, 2010. С. 19-31;
+                  p.teammate__article-content – Нагорная О.С. Значимые «другие», «национальное высокомерие» и репрезентации социалистического лагеря:  восточногерманские студенты в СССР в 1950-60-е гг. // Образ «Другого» в поликультурных обществах. Материалы международной научной конференции. Пятигорск, 22-24 апреля 2011 г. Пятигорск-Ставрополь-Москва: Изд-во Пятигорского государственного лингвистического университета, 2011. С. 278-282;
+                  p.teammate__article-content – Nagornaja, O. Ostdeutsche Studenten in der UdSSR und Repräsentationen der blockinternen Ordnung  in den 1950-1960-er // Erinnerungsorte des 20. Jahrhunderts im russischen und deutschen Gedächtnis, url: http://web.apb-tutzing.de/apb/cms/index.php?id=3029;
+                  p.teammate__article-content – Нагорная О.С. Восточногерманские студенты в СССР 1950-60-х гг.: внутриблоковая культурная дипломатия и индивидуальные интерпретации // Междисциплинарный диалог: современные тенденции в социогуманитарных, естественных и технических науках. Челябинск: Полиграф-Мастер, 2013. С. 333-345;
+                  p.teammate__article-content – Нагорная О.С. Восточногерманские студенты в СССР 1950-60-х гг.: транснациональные пространства и социалистические «сети» // Исторический журнал: научные исследования. — 2013. - № 5. - С.531-540. DOI: 10.7256/2222-1972.2013.5.9267;
+                  p.teammate__article-content – Нагорная О.С. Между «революционной бдительностью», дискотекой и тестом на СПИД: восточногерманские студенты в СССР эпохи перестройки // Государственно-политические парадигмы истории России. Сб. статей / под ред. Нагорной О.С. Челябинск: Violitprint, 2013. С. 18-29;
+                  p.teammate__article-content – Нагорная О. «Поколение» и «память» в транснациональном пространстве советских вузов: восточногерманские студенты в СССР // «Работа над прошлым»: ХХ век в коммуникации и памяти послевоенных поколений Германии и России : сборник статей / под ред. О. С. Нагорной и др. Челябинск : Каменный пояс, 2014. С. 200—210;
+                  p.teammate__article-content – Нагорная О.С. Нелегальный автостоп: путешествие из ГДР в СССР в 1972 г. // Вопросы истории. 2015. № 10. С. 37-46;
+                  p.teammate__article-content – Нагорная О. Академическая мобильность в пределах железного занавеса: студенты из ГДР в советских ВУЗах (1950—1960-е гг.) // Электронный научно-образовательный журнал «История», 2015. T.6. Выпуск 9 (42) [Электронный ресурс]. Доступ для зарегистрированных пользователей. URL: http://history.jes.su/s207987840001253-7-1. DOI: 10.18254/S0001253-7-1;
+                  p.teammate__article-content – Нагорная О.С. «… когда СССР стал сильным и могучим… многие народы нуждаются в нашей дружбе»: аспекты изучения культурной дипломатия в социалистическом лагере (1949-1989) // Диалог со временем. 2015. № 53. С. 269-278;
+                  p.teammate__article-content – Nagornaja O. Fehlt der „Blick über den Tellerrand“? „Konstitutive Widersprüchlichkeit“ der DDR  und Perspektiven der globalen Kontextualisierung der Transformationsprozesse // Das letzte Jahrzehnt des Sozialismus: Transformationsprozesse in der DDR und in der Sowjetunion (1985 bis 1989/91). Moskau : Novyj chronograf, 2016. (в печати);
+                  p.teammate__article-content – Nagornaja O., Nikonova O., Mayer M., Pieper M., Morre J. Einleitung // Das letzte Jahrzehnt des Sozialismus: Transformationsprozesse in der DDR und in der Sowjetunion (1985 bis 1989/91). Moskau : Novyj chronograf, 2016. (в печати);
+                  p.teammate__article-content – Нагорная О.С. МГБ ГДР, восточногерманские студенты и «дружественное ведомство»: искушения и границы транснациональной «истории спецслужб» социалистического лагеря // Исторический журнал: научные исследования. — 2016. - № 1. - С.72-82. DOI: 10.7256/2222-1972.2016.1.16541
+    +footer
