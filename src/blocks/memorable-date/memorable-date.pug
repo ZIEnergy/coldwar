@@ -1,0 +1,9 @@
+mixin memorable-date(mdf)
+  .memorable-date(class=mdf)
+    .wrapper.memorable-date__wrapper
+      .memorable-date__content
+        .memorable-date__header Памятная дата
+        a.memorable-date__date(href="#") 1 июня 1988 года
+        .memorable-date__description В Москве Генеральный секретарь ЦК КПСС Михаил Горбачёв и президент США Рональд Рейган подписали Договор о ядерных ракетах средней дальности.
+        +photo-caption('photo-caption--left')
+      img.memorable-date__picture(src="img/memorable-picture.jpg" alt="Memorable Picture")

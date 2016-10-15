@@ -1,0 +1,39 @@
+.socials {
+  display: flex;
+  
+  &__item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+    transition: @transition;
+    
+    &:hover {
+      opacity: .7;
+    }
+    
+    &:nth-child(n+2) {
+      margin-left: 3px;
+    }
+    
+    &--vk {
+      background: url(../img/social-vk.png) no-repeat;
+      background-size: cover;
+    }
+    
+    &--ok {
+      background: url(../img/social-ok.png) no-repeat;
+      background-size: cover;
+    }
+    
+    &--fb {
+      background: url(../img/social-fb.png) no-repeat;
+      background-size: cover;
+    }
+    
+    &--tw {
+      background: url(../img/social-tw.png) no-repeat;
+      background-size: cover;
+    }
+  }
+}
