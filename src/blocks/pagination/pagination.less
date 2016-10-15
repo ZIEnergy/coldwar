@@ -1,3 +1,42 @@
 .pagination {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
   
+  &__arrow {
+    font-family: @font-family-main;
+    font-size: 24px;
+    color: #020202;
+    text-decoration: none;
+    
+    &--left {
+      margin-right: 20px;
+    }
+    
+    &--right {
+      margin-left: 12px;
+    }
+  }
+  
+  &__item {
+    font-family: @font-family-main;
+    font-size: 24px;
+    color: #020202;
+    text-decoration: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    
+    &:nth-child(n+2) {
+      margin-left: -8px;
+    }
+    
+    &--active {
+      position: relative;
+      color: #e6e6e6;
+      background: #262626;
+    }
+  }
 }
