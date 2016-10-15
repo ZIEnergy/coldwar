@@ -1,0 +1,35 @@
+.authors {
+  background: #363434;
+  padding: 38px 65px 55px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  
+  &__item {
+    width: 50%;
+    
+    &:nth-child(n+3) {
+      margin-top: 20px;
+    }
+  }
+  
+  &__item-name {
+    color: #fefefd;
+    font-family: @font-family-main;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  
+  &__item-email {
+    color: #fefefd;
+    font-family: @font-family-main;
+    font-size: 22px;
+    line-height: 30px;
+    text-decoration: none;
+    border-bottom: 1px solid #fefefd;
+    
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+}

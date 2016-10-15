@@ -1,0 +1,13 @@
+mixin form(mdf)
+  .form(class=mdf, action="#" method="post")
+    h2.section-header.form__header Оставить сообщение
+    .form__item
+      .form__item-name Имя
+      input.input(type="text" name="name" required)
+    .form__item
+      .form__item-name Эл. почта
+      input.input(type="email" name="email" required)
+    .form__item
+      .form__item-name Сообщение
+      textarea.input.input--textarea(type="text" name="name")
+    button.button.form__button Отправить
