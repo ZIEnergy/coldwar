@@ -3,6 +3,4 @@ mixin article-dated(day, month, header, text, mdf)
     .article-dated__date
       .article-dated__day #{day}
       .article-dated__month #{month}
-    .article-dated__content
-      a.article-dated__header(href="#") #{header}
-      .article-dated__text #{text}
+    +article(header, text)

@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  include ../templates/head.pug
+  include ../templates/blocks.pug
+  
+  body
+    +header('header--inner')
+    .wrapper.wrapper--columns
+      aside.sidebar
+        h2.sidebar__header Библиотека
+        .sidebar__content
+          a.sidebar__link.sidebar__link--active(href="#") Публикации
+          a.sidebar__link(href="#") Исследования
+      section.content
+        h2.page-header.content__page-header Публикации
+        .content__item
+          
+    +footer

@@ -1,0 +1,40 @@
+.sidebar {
+  width: 195px;
+  padding-right: 20px;
+  
+  &__header {
+    color: #393939;
+    font-family: @font-family-main;
+    font-size: 24px;
+  }
+  
+  &__content {
+    margin-top: 5px;
+  }
+  
+  &__link {
+    font-family: @font-family-main;
+    font-size: 18px;
+    line-height: 24px;
+    color: #393939;
+    text-decoration: none;
+    border-bottom: 1px solid #393939;
+    display: inline-block;
+    margin-left: 20px;
+    
+    &:hover, &--active {
+      border-bottom: 0;
+    }
+    
+    &--active {
+      position: relative;
+      
+      &:before {
+        content: '→';
+        display: block;
+        position: absolute;
+        left: -20px;
+      }
+    }
+  }
+}
