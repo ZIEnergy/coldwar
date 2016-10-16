@@ -9,6 +9,11 @@
   &--inner {
     background: url(../img/header-bg.jpg) no-repeat;
     background-size: cover;
+    background-position: center center;
+  
+    @media screen and (max-width: 1023px) {
+      width: 1200px;
+    }
   }
   
   &__wrapper {
@@ -38,6 +43,10 @@
     text-decoration: none;
     margin-right: 35px;
     margin-bottom: 33px;
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
   
   &__language {

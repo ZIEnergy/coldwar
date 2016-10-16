@@ -12,13 +12,25 @@
     font-size: 24px;
     color: @color-text;
     text-decoration: none;
+    transition: @transition;
+    position: relative;
     
     &--left {
       margin-right: 20px;
+      left: 0;
+      
+      &:hover {
+        left: -3px;
+      }
     }
     
     &--right {
       margin-left: 12px;
+      right: 0;
+      
+      &:hover {
+        right: -3px;
+      }
     }
   }
   
@@ -37,7 +49,7 @@
       margin-left: -7px;
     }
     
-    &--active {
+    &--active, &:hover {
       position: relative;
       color: #e6e6e6;
       background: #262626;

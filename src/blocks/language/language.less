@@ -12,12 +12,13 @@
     display: block;
     text-align: center;
     line-height: 35px;
+    transition: @transition;
     
     &:nth-child(n+2) {
       margin-left: 11px;
     }
     
-    &--active {
+    &--active, &:hover {
       color: #353535;
       background: #dbdbd3;
     }

@@ -1,5 +1,5 @@
 mixin form(mdf)
-  .form(class=mdf, action="#" method="post")
+  form.form(class=mdf, action="#" method="post")
     h2.section-header.form__header Оставить сообщение
     .form__item
       .form__item-name Имя
@@ -9,5 +9,5 @@ mixin form(mdf)
       input.input(type="email" name="email" required)
     .form__item
       .form__item-name Сообщение
-      textarea.input.input--textarea(type="text" name="name")
+      textarea.input.input--textarea(name="message")
     button.button.form__button Отправить
