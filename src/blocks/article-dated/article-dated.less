@@ -1,5 +1,5 @@
 .article-dated {
-  width: 33%;
+  width: 33.3%;
   padding-right: 25px;
   display: flex;
   
@@ -10,6 +10,15 @@
   &--wide {
     width: 100%;
     
+    &.content__article-dated {
+      
+      &:nth-child(n+2) {
+        margin-top: 44px;
+      }
+    }
+    
+      
+    
     .article-dated__date {
       width: 90px;
       margin-right: 0;
@@ -18,7 +27,7 @@
   }
   
   &__date {
-    margin-right: 30px;
+    margin-right: 42px;
   }
   
   &__day {

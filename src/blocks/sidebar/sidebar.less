@@ -10,18 +10,23 @@
   }
   
   &__content {
-    margin-top: 5px;
+    margin-top: 9px;
   }
   
   &__link {
     font-family: @font-family-main;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 20px;
+    letter-spacing: .2px;
     color: #393939;
     text-decoration: none;
     border-bottom: 1px solid #393939;
     display: inline-block;
     margin-left: 20px;
+    
+    &:nth-child(n+2) {
+      margin-top: 8px;
+    }
     
     &:hover, &--active {
       border-bottom: 0;
