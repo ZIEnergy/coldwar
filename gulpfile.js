@@ -48,7 +48,8 @@ gulp.task('templates', function () {
   var params = {};
   gulp.src('./src/pages/*.pug')
     .pipe(pug({
-      locals: params
+      locals: params,
+      pretty: true
     }))
     .pipe(gulp.dest('./build'))
     .pipe(browserSync.reload({stream:true}));
@@ -96,7 +97,7 @@ gulp.task('styles', function () {
     .pipe(autoprefixer({
         browsers: ['last 20 versions']
     }))
-    .pipe(cleanCSS())
+//    .pipe(cleanCSS())
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.reload({stream:true}));
 });
